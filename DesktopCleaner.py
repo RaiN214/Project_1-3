@@ -3,6 +3,7 @@ import shutil
 import configparser
 import time
 import matplotlib.pyplot as plt
+import sys
 
 CONFIG_FILE = 'config.ini'
 
@@ -45,7 +46,7 @@ def get_desktop_and_excluded_files():
     excluded_files = []
     num_excluded_files = int(input("Enter the number of files you do not wish to move: "))
     for i in range(num_excluded_files):
-        file_name = input(f"Enter the name of file {i + 1} + its extension (ex:Formula Table.docx)")
+        file_name = input(f"Enter the name of file {i + 1} + its extension (ex:Formula Table.docx): ")
         excluded_files.append(file_name)
 
     return desktop_path, excluded_files
@@ -93,8 +94,9 @@ def main():
 
         if choice == '1':
 
-            print('''This algorithm will clean up your computer desktop!\n
-            When prompted, enter your desktop path and that of the files you wish to spare.\n
+            print('''\n
+            This algorithm will clean up your computer desktop!\n
+            When prompted, enter your desktop path and name of the files you wish to spare.\n
             Once the program is done running, some information such as the "Time Taken" to move 
             the item(s) and the type of file(s) moved will be displayed through a "Bar Chart" and a "Pie Chart" ''')
 
@@ -136,6 +138,10 @@ def main():
         else:
             print("Please enter a valid option!")
 
+
+if sys.version_info < (3, 11):
+    print("This program runs on Python 3.11 or later")
+    sys.exit(1)
 
 if __name__ == "__main__":
     main()
