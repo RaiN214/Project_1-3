@@ -10,3 +10,7 @@ This code was only tested through a WINDOWS device (might not work on macOS) and
 
 Link for the video and the report:
 https://drive.google.com/drive/folders/1fatW-2U0yNaNVQkcCtsEWCKXvFI5LTgH?usp=sharing
+
+
+*EDIT*
+Please note that at the moment Project 3 has been submitted, Mathlib and Numpy libraries do NOT work with the latest version of Python(3.12)
