@@ -13,4 +13,4 @@ https://drive.google.com/drive/folders/1fatW-2U0yNaNVQkcCtsEWCKXvFI5LTgH?usp=sha
 
 
 *EDIT*
-Please note that at the moment Project 3 has been submitted, Mathlib and Numpy libraries do NOT work with the latest version of Python(3.12)
+Please note that at the moment Project 3 has been submitted, Mathlib and Numpy libraries do NOT work with the latest version of Python (Python ver. 3.12)
